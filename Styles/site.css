@@ -1,0 +1,211 @@
+:root {
+    --primary: #009688;
+    --secondary: whitesmoke;
+    /*Advanced css #1(Custom properties)*/
+
+
+}
+
+a {
+    /* remove default underline for a tags*/
+    text-decoration: none;
+}
+
+/* imported font*/
+h1 {
+    font-family: "DM Serif Display", serif;
+}
+
+/*general*/
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa;
+    color: #263238;
+}
+
+
+#topBar {
+    background-color: #00796b;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+
+header {
+    display: flex;
+    /* Advanced css #2(flex)*/
+    flex-direction: column;
+    align-items: center;
+}
+
+#italic {
+    font-style: italic;
+
+}
+
+
+header .logo {
+    width: 9em;
+    height: auto;
+    margin: 0;
+    float: right;
+    /*floated Image*/
+}
+
+/* Header text  */
+header h1,
+header h2
+
+/* Advanced css #4 (combinators)*/
+    {
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.Above-Links {
+    /*the small title between the image and link*/
+
+    color: #263238;
+    font-style: italic;
+
+
+
+}
+
+/* Header links */
+header h1 a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* top navigation links  */
+.top-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.top-links {
+
+    /* Advanced Css #5 css nesting*/
+    li {
+        display: inline-block;
+    }
+
+    li a {
+        text-decoration: none;
+        color: var(--secondary);
+        font-weight: bold;
+        padding: 7px;
+        background-color: #009688;
+        border-radius: 5px;
+        display: inline-block;
+    }
+}
+
+
+
+.top-links li a:active {
+    /*active Pseudo class affects the link while i'm pressing it*/
+    /*Advanced css #3 (pseudo element)*/
+    background-color: #005f5f;
+    transform: scale(0.95);
+}
+
+
+
+/* Section styles */
+section.class {
+    text-align: center;
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/*image links */
+section.class img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: 3px solid #00796b;
+}
+
+section.class p {
+    margin: 10px 0 0;
+    font-size: 1.2em;
+    color: #263238;
+    border: 2px solid #00796b;
+    padding: 10px;
+    background-color: #f1f8e9;
+}
+
+/* Footer  */
+footer {
+    background-color: #00796b;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+address,
+footer p,
+footer small {
+    margin: 10px 0;
+}
+
+address a,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-links li a {
+    background-color: var(--primary);
+}
+
+footer nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul.bottom-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+ul.bottom-links li {
+    margin: 10px 0;
+}
+
+
+ul.bottom-links a {
+
+    display: block;
+    padding: 15px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+
+}
+
+h1 {
+    color: #263238;
+}
